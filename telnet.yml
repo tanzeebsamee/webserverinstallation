@@ -1,0 +1,12 @@
+---
+  -name: Install Telnet
+  become: yes
+  vars:
+    
+
+    tasks:
+      -name: Telnet packages
+      yum:
+        name: telnet
+        state: latest
+
